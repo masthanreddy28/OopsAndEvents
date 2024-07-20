@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width:500px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #child{
+            width:300px;
+            height:300px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body >
+    <input type="button" value="submit" onclick="clicked()" width="200px" height="100px">   ( onclick )
+    <input type="button" value="submit" onmouseover="clicked()" width="200px" height="100px"> (OnMouseOver)
+    <input type="button" value="submit" onkeydown="clicked()" width="200px" height="100px">(onkeydown)
+     <input type="button" value="submit" onload="window.alert('Page successfully loaded')" width="200px" height="100px"> 
+     <div id="parent"> 
+        <h1>parent</h1>
+        <div id="child">
+          <h1>child</h1>
+          <br/>
+            <input id="event1" type="button" value="event1">
+            <input id="event2" type="button" value="event2">
+        </div>
+    </div>
+
+    <ul id="tasks">
+        <li>list1</li>
+        <li>list2</li>
+    </ul> 
+    <script src="OopsJs.js"></script>
+</body>
+</html>
